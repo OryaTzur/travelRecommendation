@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Recommendation</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-image: url('1_6MAXmPTNMKvU-C65_3KhVw.jpg'); /* Background image */
+            background-size: cover;
+            background-position: center;
+            color: white;
+            text-align: center;
+        }
+
+        .navbar {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: rgba(0, 0, 0, 0.7); /* Transparent navbar */
+            padding: 10px 20px;
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 16px;
+        }
+
+        .navbar a:hover {
+            text-decoration: underline;
+        }
+
+        .navbar .search-bar {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        .navbar input[type="text"] {
+            padding: 5px;
+            border: none;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+
+        .navbar button {
+            padding: 5px 10px;
+            border: none;
+            border-radius: 5px;
+            font-size: 14px;
+            cursor: pointer;
+        }
+
+        .navbar button:hover {
+            background-color: #555;
+            color: white;
+        }
+
+        .logo {
+            font-size: 20px;
+            font-weight: bold;
+            color: white;
+        }
+
+        .content {
+            margin-top: 100px;
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.6); /* Transparent background for readability */
+            border-radius: 10px;
+            display: inline-block;
+        }
+
+        h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 18px;
+            line-height: 1.6;
+        }
+
+        .social-icons {
+            margin-top: 20px;
+        }
+
+        .social-icons a {
+            margin: 0 10px;
+            text-decoration: none;
+            color: white;
+            font-size: 20px;
+        }
+
+        #recommendations {
+            margin: 50px auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .recommendation-card {
+            margin: 15px;
+            padding: 10px;
+            background-color: white;
+            color: black;
+            border-radius: 10px;
+            text-align: center;
+            max-width: 300px;
+        }
+
+        .recommendation-image {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        footer {
+            margin-top: 50px;
+            background-color: rgba(0, 0, 0, 0.8);
+            color: white;
+            padding: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">Travel Recommendation</div>
+            <div>
+                <a href="travel_recommendation.html">Home</a>
+                <a href="about.html">About Us</a>
+                <a href="contact.html">Contact Us</a>
+            </div>
+            <div class="search-bar">
+                <input type="text" id="searchInput" placeholder="Search recommendations...">
+                <button id="searchBtn">Search</button>
+                <button id="resetBtn">Reset</button>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="content">
+            <h1>Welcome to Travel Recommendation</h1>
+            <p>Your trusted partner for discovering amazing travel destinations around the world.</p>
+            <p>Find the best cities, beaches, and cultural landmarks tailored to your preferences.</p>
+            <div class="social-icons">
+                <a href="#" title="Facebook">🌐</a>
+                <a href="#" title="Instagram">📷</a>
+                <a href="#" title="Twitter">🐦</a>
+            </div>
+        </section>
+        <section id="recommendations">
+            <!-- Travel recommendations will be dynamically populated here by travel_recommendation.js -->
+        </section>
+    </main>
+    <footer>
+        <p>© 2024 Travel Recommendation. All rights reserved.</p>
+    </footer>
+
+    <script src="travel_recommendation.js"></script>
+</body>
+</html>
